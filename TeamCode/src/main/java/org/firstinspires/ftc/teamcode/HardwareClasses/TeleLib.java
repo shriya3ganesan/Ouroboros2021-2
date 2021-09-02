@@ -1,8 +1,6 @@
 package org.firstinspires.ftc.teamcode.HardwareClasses;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
-import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.hardware.Servo;
 
 public abstract class TeleLib extends OpMode {
 
@@ -20,6 +18,10 @@ public abstract class TeleLib extends OpMode {
     @Override
     public void init() {
         //TODO: Krish - Initialize the DcMotors' hardware maps
+            br=hardwareMap.dcMotor.get("br");
+            fr=hardwareMap.dcMotor.get("fr");
+            bl=hardwareMap.dcMotor.get("bl");
+            fr=hardwareMap.dcMotor.get("fr");
 
         //TODO: Sophia - Initialize the Servos' hardware maps
 
