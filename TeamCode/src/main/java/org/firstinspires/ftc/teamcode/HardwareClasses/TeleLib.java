@@ -18,7 +18,7 @@ public abstract class TeleLib extends OpMode {
     @Override
     public void init() {
         //TODO: Krish - Initialize the DcMotors' hardware maps
-        //Comment
+        //Comments
             br=hardwareMap.dcMotor.get("br");
             fr=hardwareMap.dcMotor.get("fr");
             bl=hardwareMap.dcMotor.get("bl");
