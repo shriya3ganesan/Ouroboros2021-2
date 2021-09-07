@@ -37,7 +37,16 @@ public abstract class TeleLib extends OpMode {
     //TODO: Krish - Create intake method (GP2: right bumper forward, left bumper backwards)
     public void intake()
     {
-
+        boolean right_bumper = gamepad2.right_bumper;
+        boolean left_bumper = gamepad2.left_bumper;
+        if (right_bumper == yes) {
+            intake.setPower(1);
+        } else if (left_bumper == yes) {
+            intake.setPower(-1);
+        } else {
+            intake.setPower(0);
+        }
+    }
     }
 
     //TODO: Shriya - Create lift method (GP2: right joystick up and down)
@@ -49,6 +58,10 @@ public abstract class TeleLib extends OpMode {
     //TODO: Krish - Set power of all motors to 0
     public void killMotors()
     {
+        fl.setPower(0);
+        fr.setPower(0);
+        bl.setPower(0);
+        br.setPower(0);
 
     }
 
