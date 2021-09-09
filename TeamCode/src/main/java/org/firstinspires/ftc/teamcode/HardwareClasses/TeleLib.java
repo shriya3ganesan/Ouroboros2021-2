@@ -10,7 +10,6 @@ public abstract class TeleLib extends OpMode {
     public DcMotor fr;
     public DcMotor intake;
     public DcMotor lift;
-
     public Servo arm;
     public Servo grabber;
     public Servo hitter;
